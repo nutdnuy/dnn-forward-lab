@@ -1,0 +1,163 @@
+{
+  "fold": 2,
+  "seed": 43,
+  "train_rows": 390,
+  "cutoff": "2019-07-01",
+  "test_start": "2019-07-02",
+  "test_end": "2019-08-12",
+  "selected": {
+    "forward_selected": "momentum",
+    "backward_selected": "tema"
+  },
+  "repaired_forecast_bars": 30,
+  "performance": {
+    "forward_selected": {
+      "observations": 30,
+      "total_return": 0.1389216736782688,
+      "annualized_return": 1.982279919385313,
+      "max_drawdown": 0.09185287430436317,
+      "annualized_volatility": 0.38630278265400425,
+      "sharpe": 3.0180399031397087,
+      "sortino": 5.748867921367447,
+      "calmar": 21.581033085767586,
+      "trades": 2,
+      "win_rate": 1.0,
+      "mean_trade_return": 0.06743029376721588,
+      "expectancy_ratio": null
+    },
+    "backward_selected": {
+      "observations": 30,
+      "total_return": 0.0016538635708869265,
+      "annualized_return": 0.01397776663636426,
+      "max_drawdown": 0.12500501228572636,
+      "annualized_volatility": 0.36303087675020695,
+      "sharpe": 0.21202941851498483,
+      "sortino": 0.32321069699365,
+      "calmar": 0.11181764939484995,
+      "trades": 2,
+      "win_rate": 0.5,
+      "mean_trade_return": 0.003943018111627727,
+      "expectancy_ratio": 0.0525039179642665
+    },
+    "buy_hold": {
+      "observations": 30,
+      "total_return": 0.1334262520392986,
+      "annualized_return": 1.8635412671032976,
+      "max_drawdown": 0.14608054749873556,
+      "annualized_volatility": 0.4450977035511716,
+      "sharpe": 2.581281104343663,
+      "sortino": 4.426376263216224,
+      "calmar": 12.75694333716423,
+      "trades": 1,
+      "win_rate": 1.0,
+      "mean_trade_return": 0.1334262520392986,
+      "expectancy_ratio": null
+    },
+    "cash": {
+      "observations": 30,
+      "total_return": 0.0,
+      "annualized_return": 0.0,
+      "max_drawdown": 0.0,
+      "annualized_volatility": 0.0,
+      "sharpe": null,
+      "sortino": null,
+      "calmar": null,
+      "trades": 0,
+      "win_rate": null,
+      "mean_trade_return": null,
+      "expectancy_ratio": null
+    }
+  },
+  "forecast_errors": {
+    "dnn": {
+      "open": {
+        "mse": 120.40877633425158,
+        "rmse": 10.973093289234882,
+        "mae": 9.874427748488321,
+        "mape_pct": 12.243061256626829,
+        "explained_variance": 0.16681101788671493
+      },
+      "high": {
+        "mse": 160.76160835786604,
+        "rmse": 12.679180113787565,
+        "mae": 11.55862880631138,
+        "mape_pct": 13.985025038778911,
+        "explained_variance": 0.07370409957806645
+      },
+      "low": {
+        "mse": 184.12990424667706,
+        "rmse": 13.569447455466898,
+        "mae": 12.488733574813889,
+        "mape_pct": 15.92329712775163,
+        "explained_variance": -0.19355551652001002
+      },
+      "close": {
+        "mse": 240.28907274394356,
+        "rmse": 15.501260359852793,
+        "mae": 14.561682021482868,
+        "mape_pct": 18.156216308974635,
+        "explained_variance": -0.16694370826510552
+      }
+    },
+    "persistence": {
+      "open": {
+        "mse": 142.69297796094511,
+        "rmse": 11.94541660893186,
+        "mae": 10.827519467489287,
+        "mape_pct": 13.43921534331922,
+        "explained_variance": -2.220446049250313e-16
+      },
+      "high": {
+        "mse": 171.92585427653387,
+        "rmse": 13.11204996469026,
+        "mae": 11.941737097027453,
+        "mape_pct": 14.443319845749969,
+        "explained_variance": 0.0
+      },
+      "low": {
+        "mse": 132.04211381408544,
+        "rmse": 11.490957915425739,
+        "mae": 10.434153178355972,
+        "mape_pct": 13.271505013332796,
+        "explained_variance": -2.220446049250313e-16
+      },
+      "close": {
+        "mse": 158.68478304063,
+        "rmse": 12.597014846408255,
+        "mae": 11.59651906035122,
+        "mape_pct": 14.402647754176495,
+        "explained_variance": 1.1102230246251565e-16
+      }
+    },
+    "drift": {
+      "open": {
+        "mse": 168.45361474903666,
+        "rmse": 12.978968169659584,
+        "mae": 11.86880667817405,
+        "mape_pct": 14.75539330514156,
+        "explained_variance": -0.08072326314863432
+      },
+      "high": {
+        "mse": 199.3408170579893,
+        "rmse": 14.118810752254927,
+        "mae": 12.976059307747516,
+        "mape_pct": 15.722441905378872,
+        "explained_variance": -0.05599895747631889
+      },
+      "low": {
+        "mse": 157.20847219663756,
+        "rmse": 12.5382802726944,
+        "mae": 11.497026673304905,
+        "mape_pct": 14.649525349927467,
+        "explained_variance": -0.07599365864737972
+      },
+      "close": {
+        "mse": 185.5111155128499,
+        "rmse": 13.620246529077582,
+        "mae": 12.653385419862946,
+        "mape_pct": 15.743021837580295,
+        "explained_variance": -0.049469037399889615
+      }
+    }
+  }
+}

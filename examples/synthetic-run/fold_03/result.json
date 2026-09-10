@@ -1,0 +1,163 @@
+{
+  "fold": 3,
+  "seed": 44,
+  "train_rows": 420,
+  "cutoff": "2019-08-12",
+  "test_start": "2019-08-13",
+  "test_end": "2019-09-23",
+  "selected": {
+    "forward_selected": "momentum",
+    "backward_selected": "macd"
+  },
+  "repaired_forecast_bars": 0,
+  "performance": {
+    "forward_selected": {
+      "observations": 30,
+      "total_return": 0.0,
+      "annualized_return": 0.0,
+      "max_drawdown": 0.0,
+      "annualized_volatility": 0.0,
+      "sharpe": null,
+      "sortino": null,
+      "calmar": null,
+      "trades": 0,
+      "win_rate": null,
+      "mean_trade_return": null,
+      "expectancy_ratio": null
+    },
+    "backward_selected": {
+      "observations": 30,
+      "total_return": 0.0,
+      "annualized_return": 0.0,
+      "max_drawdown": 0.0,
+      "annualized_volatility": 0.0,
+      "sharpe": null,
+      "sortino": null,
+      "calmar": null,
+      "trades": 0,
+      "win_rate": null,
+      "mean_trade_return": null,
+      "expectancy_ratio": null
+    },
+    "buy_hold": {
+      "observations": 30,
+      "total_return": -0.29465195922416065,
+      "annualized_return": -0.9467169470497381,
+      "max_drawdown": 0.29972155071722484,
+      "annualized_volatility": 0.37760523321739947,
+      "sharpe": -7.534462084839599,
+      "sortino": -7.403028741725156,
+      "calmar": -3.1586549074775316,
+      "trades": 1,
+      "win_rate": 0.0,
+      "mean_trade_return": -0.29465195922416065,
+      "expectancy_ratio": -1.0
+    },
+    "cash": {
+      "observations": 30,
+      "total_return": 0.0,
+      "annualized_return": 0.0,
+      "max_drawdown": 0.0,
+      "annualized_volatility": 0.0,
+      "sharpe": null,
+      "sortino": null,
+      "calmar": null,
+      "trades": 0,
+      "win_rate": null,
+      "mean_trade_return": null,
+      "expectancy_ratio": null
+    }
+  },
+  "forecast_errors": {
+    "dnn": {
+      "open": {
+        "mse": 245.12897950443454,
+        "rmse": 15.656595399525228,
+        "mae": 13.91932971124138,
+        "mape_pct": 23.31547751532981,
+        "explained_variance": -0.08336727325050863
+      },
+      "high": {
+        "mse": 342.8691858460226,
+        "rmse": 18.516727190462753,
+        "mae": 16.88287360056836,
+        "mape_pct": 27.600394697102722,
+        "explained_variance": -0.16556131407393915
+      },
+      "low": {
+        "mse": 204.70566957710864,
+        "rmse": 14.30753890706255,
+        "mae": 12.531185058344686,
+        "mape_pct": 21.69610243347272,
+        "explained_variance": -0.028781405266300464
+      },
+      "close": {
+        "mse": 282.2159836520365,
+        "rmse": 16.799285212533196,
+        "mae": 15.135545605250169,
+        "mape_pct": 25.556233747087987,
+        "explained_variance": -0.09986388916486555
+      }
+    },
+    "persistence": {
+      "open": {
+        "mse": 175.1578957267551,
+        "rmse": 13.234723107294505,
+        "mae": 11.324238624683147,
+        "mape_pct": 19.145719350565123,
+        "explained_variance": 0.0
+      },
+      "high": {
+        "mse": 183.71502422378816,
+        "rmse": 13.554151549388408,
+        "mae": 11.59179388798196,
+        "mape_pct": 19.261784510976128,
+        "explained_variance": 0.0
+      },
+      "low": {
+        "mse": 183.0676908837458,
+        "rmse": 13.530250954204279,
+        "mae": 11.726281774610932,
+        "mape_pct": 20.35562440870448,
+        "explained_variance": 0.0
+      },
+      "close": {
+        "mse": 191.75468147396916,
+        "rmse": 13.847551461322292,
+        "mae": 12.021142232057857,
+        "mape_pct": 20.492209408597404,
+        "explained_variance": -2.220446049250313e-16
+      }
+    },
+    "drift": {
+      "open": {
+        "mse": 152.14650521572077,
+        "rmse": 12.334768146005857,
+        "mae": 10.541025652717533,
+        "mape_pct": 17.826656169780463,
+        "explained_variance": 0.12028323902978122
+      },
+      "high": {
+        "mse": 160.96594805367195,
+        "rmse": 12.687235634828887,
+        "mae": 10.828851782944254,
+        "mape_pct": 18.00217938747803,
+        "explained_variance": 0.11264946082386962
+      },
+      "low": {
+        "mse": 158.81980940305286,
+        "rmse": 12.60237316552136,
+        "mae": 10.912775096987666,
+        "mape_pct": 18.946935177526154,
+        "explained_variance": 0.12526977727347477
+      },
+      "close": {
+        "mse": 167.719355522703,
+        "rmse": 12.95065077603064,
+        "mae": 11.233506042517048,
+        "mape_pct": 19.152806561154232,
+        "explained_variance": 0.11824529080332702
+      }
+    }
+  }
+}

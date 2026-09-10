@@ -1,0 +1,16 @@
+# More training does not imply better investment performance. Freeze settings before evaluation.
+lookback = 5
+min_train = 504
+horizon = 30
+folds = 12
+epochs = 100
+batch_size = 5
+learning_rate = 0.001
+dropout = 0.002 # Literal reading of the paper's 0.2%; 0.2 would mean 20%.
+validation_size = 30
+patience = 15
+commission_bps = 5.0
+slippage_bps = 5.0
+initial_cash = 10000.0
+periods_per_year = 252
+seed = 42

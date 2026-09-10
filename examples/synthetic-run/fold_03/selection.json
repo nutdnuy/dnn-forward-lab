@@ -1,0 +1,156 @@
+{
+  "forward": [
+    {
+      "strategy": "momentum",
+      "net_return": 0.017973599253731543,
+      "trades": 1
+    },
+    {
+      "strategy": "stochastic",
+      "net_return": 0.01764600602363764,
+      "trades": 1
+    },
+    {
+      "strategy": "williams_r",
+      "net_return": 0.01764600602363764,
+      "trades": 1
+    },
+    {
+      "strategy": "ema",
+      "net_return": 0.01185940482922998,
+      "trades": 1
+    },
+    {
+      "strategy": "sma",
+      "net_return": 0.010637194496653457,
+      "trades": 1
+    },
+    {
+      "strategy": "price_oscillator",
+      "net_return": 0.009610322632845225,
+      "trades": 1
+    },
+    {
+      "strategy": "rsi",
+      "net_return": 0.00788646119526848,
+      "trades": 1
+    },
+    {
+      "strategy": "macd",
+      "net_return": 0.0012499361059101766,
+      "trades": 1
+    },
+    {
+      "strategy": "tema",
+      "net_return": 0.00040515476905711445,
+      "trades": 1
+    },
+    {
+      "strategy": "adx",
+      "net_return": 0.0,
+      "trades": 0
+    },
+    {
+      "strategy": "atr",
+      "net_return": 0.0,
+      "trades": 0
+    },
+    {
+      "strategy": "bollinger",
+      "net_return": 0.0,
+      "trades": 0
+    },
+    {
+      "strategy": "po_rsi",
+      "net_return": 0.0,
+      "trades": 0
+    },
+    {
+      "strategy": "po_wr",
+      "net_return": 0.0,
+      "trades": 0
+    },
+    {
+      "strategy": "st_mo_macd",
+      "net_return": 0.0,
+      "trades": 0
+    }
+  ],
+  "backward": [
+    {
+      "strategy": "macd",
+      "net_return": 0.196237775326213,
+      "trades": 1
+    },
+    {
+      "strategy": "adx",
+      "net_return": 0.15105437588822923,
+      "trades": 1
+    },
+    {
+      "strategy": "momentum",
+      "net_return": 0.13892167367826924,
+      "trades": 2
+    },
+    {
+      "strategy": "ema",
+      "net_return": 0.09693125926721535,
+      "trades": 1
+    },
+    {
+      "strategy": "sma",
+      "net_return": 0.09693125926721535,
+      "trades": 1
+    },
+    {
+      "strategy": "rsi",
+      "net_return": 0.07686781703179646,
+      "trades": 2
+    },
+    {
+      "strategy": "bollinger",
+      "net_return": 0.04724389775087445,
+      "trades": 1
+    },
+    {
+      "strategy": "stochastic",
+      "net_return": 0.03619317046699533,
+      "trades": 2
+    },
+    {
+      "strategy": "williams_r",
+      "net_return": 0.03619317046699533,
+      "trades": 2
+    },
+    {
+      "strategy": "tema",
+      "net_return": 0.0016538635708871485,
+      "trades": 2
+    },
+    {
+      "strategy": "st_mo_macd",
+      "net_return": 0.0,
+      "trades": 0
+    },
+    {
+      "strategy": "po_rsi",
+      "net_return": -0.017452697686042296,
+      "trades": 1
+    },
+    {
+      "strategy": "po_wr",
+      "net_return": -0.05456474024385116,
+      "trades": 1
+    },
+    {
+      "strategy": "atr",
+      "net_return": -0.054847750531961226,
+      "trades": 1
+    },
+    {
+      "strategy": "price_oscillator",
+      "net_return": -0.06948403471572806,
+      "trades": 1
+    }
+  ]
+}

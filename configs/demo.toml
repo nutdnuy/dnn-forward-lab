@@ -1,0 +1,8 @@
+# Fast, synthetic software demonstration. Not a model-quality benchmark.
+min_train = 360
+horizon = 30
+folds = 3
+epochs = 35
+batch_size = 32
+patience = 8
+seed = 42

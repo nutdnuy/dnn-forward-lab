@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "Please cite both this implementation and the research paper when using this work."
+title: "DNN Forward Lab"
+version: 0.1.0
+date-released: 2026-09-10
+type: software
+license: MIT
+authors:
+  - name: Nuth
+references:
+  - type: article
+    title: "DNN-ForwardTesting: A New Trading Strategy Validation using Statistical Timeseries Analysis and Deep Neural Networks"
+    authors:
+      - family-names: Letteri
+        given-names: Ivan
+      - family-names: Della Penna
+        given-names: Giuseppe
+      - family-names: De Gasperis
+        given-names: Giovanni
+      - family-names: Dyoub
+        given-names: Abeer
+    year: 2022
+    doi: 10.48550/arXiv.2210.11532
+    url: https://arxiv.org/abs/2210.11532

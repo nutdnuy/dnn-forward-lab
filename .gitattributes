@@ -1,0 +1,12 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+# Preserve Matplotlib's generated SVG formatting and reduce generated review noise.
+examples/synthetic-run/** linguist-generated=true
+examples/synthetic-run/*.svg -whitespace
+*.woff2 binary
+*.ttf binary
+*.png binary
+*.npz binary

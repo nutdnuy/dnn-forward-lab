@@ -1,0 +1,54 @@
+name: Research checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: checks-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    env:
+      MPLBACKEND: Agg
+      LOKY_MAX_CPU_COUNT: '2'
+      OMP_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install locked environment
+        run: |
+          python -m pip install uv==0.10.7
+          uv sync --frozen --all-extras
+      - name: Lint and format
+        run: |
+          uv run --frozen ruff check .
+          uv run --frozen ruff format --check .
+      - name: Unit and integration tests
+        run: uv run --frozen --all-extras pytest --cov=dnn_forward_lab --cov-report=term-missing --cov-report=xml --cov-fail-under=85
+      - name: Verify installable distributions
+        run: uv build
+      - name: Exercise offline CLI
+        if: matrix.python == '3.12'
+        run: uv run --frozen dnn-forward demo --config configs/demo.toml --output runs/ci-demo
+      - name: Save synthetic report and coverage
+        if: always() && matrix.python == '3.12'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: synthetic-research-checks
+          path: |
+            coverage.xml
+            runs/ci-demo/
+          retention-days: 14

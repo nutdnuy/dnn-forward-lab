@@ -1,0 +1,58 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dnn-forward-lab"
+version = "0.1.0"
+description = "Auditable, chronological DNN forward-testing experiments inspired by arXiv:2210.11532"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = "MIT"
+authors = [{name = "Nuth"}]
+keywords = ["quantitative-finance", "walk-forward", "pytorch", "research", "backtesting"]
+classifiers = ["Development Status :: 3 - Alpha", "Programming Language :: Python :: 3", "Topic :: Scientific/Engineering :: Artificial Intelligence"]
+dependencies = [
+  "numpy>=2.1,<2.5", "pandas>=2.2,<3", "torch>=2.6,<3",
+  "scikit-learn>=1.6,<2", "matplotlib>=3.9,<4",
+]
+
+[project.optional-dependencies]
+statistics = ["statsmodels>=0.14.4,<0.15"]
+
+[project.scripts]
+dnn-forward = "dnn_forward_lab.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8.3,<10", "pytest-cov>=6,<8", "ruff>=0.11,<1", "build>=1.2,<2"]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+filterwarnings = ["error"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+# Embedded report HTML/CSS includes long template lines; Python code is still formatted.
+"src/dnn_forward_lab/report.py" = ["E501"]
+
+[tool.coverage.run]
+source = ["dnn_forward_lab"]
+branch = true
+
+[tool.coverage.report]
+show_missing = true

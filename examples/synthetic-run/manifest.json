@@ -1,0 +1,46 @@
+{
+  "package_version": "0.1.0",
+  "source_sha256": "0fa556c7742ed2c64cfa247f8c83d25af4928c29388c22058e0385b2a0823b56",
+  "python": "3.12.12",
+  "platform": "macOS-15.7.4-arm64-arm-64bit",
+  "dependencies": {
+    "numpy": "2.4.6",
+    "pandas": "2.3.3",
+    "torch": "2.14.0",
+    "scikit-learn": "1.9.0",
+    "matplotlib": "3.11.1"
+  },
+  "asset": "SYNTHETIC",
+  "source": "Seeded synthetic generator v1; not market data",
+  "adjustment": "None; synthetic internally consistent OHLC",
+  "data_status": "synthetic demonstration",
+  "data_sha256": "7ab3e3bd6f3e58ada4669345447426b1b2c9fdc085eaeaa8434679e8c27e9fab",
+  "rows": 450,
+  "unused_tail_rows": 0,
+  "config": {
+    "lookback": 5,
+    "horizon": 30,
+    "min_train": 360,
+    "folds": 3,
+    "epochs": 35,
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "dropout": 0.002,
+    "validation_size": 30,
+    "patience": 8,
+    "seed": 42,
+    "commission_bps": 5.0,
+    "slippage_bps": 5.0,
+    "initial_cash": 10000.0,
+    "periods_per_year": 252
+  },
+  "forecast_protocol": "recursive fixed-origin; known dates only, no future prices",
+  "forecast_baselines": [
+    "persistence",
+    "drift"
+  ],
+  "selection_objective": "net compounded return; alphabetical strategy tie break",
+  "execution": "previous close signal -> next open; scheduled terminal close liquidation each fold",
+  "visual_route": "no-image-generator",
+  "complete": true
+}

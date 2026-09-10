@@ -1,0 +1,163 @@
+{
+  "fold": 1,
+  "seed": 42,
+  "train_rows": 360,
+  "cutoff": "2019-05-20",
+  "test_start": "2019-05-21",
+  "test_end": "2019-07-01",
+  "selected": {
+    "forward_selected": "atr",
+    "backward_selected": "stochastic"
+  },
+  "repaired_forecast_bars": 30,
+  "performance": {
+    "forward_selected": {
+      "observations": 30,
+      "total_return": 0.0,
+      "annualized_return": 0.0,
+      "max_drawdown": 0.0,
+      "annualized_volatility": 0.0,
+      "sharpe": null,
+      "sortino": null,
+      "calmar": null,
+      "trades": 0,
+      "win_rate": null,
+      "mean_trade_return": null,
+      "expectancy_ratio": null
+    },
+    "backward_selected": {
+      "observations": 30,
+      "total_return": -0.11347626086540841,
+      "annualized_return": -0.6364207377406135,
+      "max_drawdown": 0.18491158854156875,
+      "annualized_volatility": 0.45503444620450856,
+      "sharpe": -1.9987135587887168,
+      "sortino": -2.6839807252926153,
+      "calmar": -3.4417569107495063,
+      "trades": 1,
+      "win_rate": 0.0,
+      "mean_trade_return": -0.11347626086540874,
+      "expectancy_ratio": -1.0
+    },
+    "buy_hold": {
+      "observations": 30,
+      "total_return": -0.13459259963845915,
+      "annualized_return": -0.703070683102823,
+      "max_drawdown": 0.19189657329088472,
+      "annualized_volatility": 0.4640963689529741,
+      "sharpe": -2.385633525432216,
+      "sortino": -3.1893026543015104,
+      "calmar": -3.6638000931735215,
+      "trades": 1,
+      "win_rate": 0.0,
+      "mean_trade_return": -0.13459259963845926,
+      "expectancy_ratio": -1.0
+    },
+    "cash": {
+      "observations": 30,
+      "total_return": 0.0,
+      "annualized_return": 0.0,
+      "max_drawdown": 0.0,
+      "annualized_volatility": 0.0,
+      "sharpe": null,
+      "sortino": null,
+      "calmar": null,
+      "trades": 0,
+      "win_rate": null,
+      "mean_trade_return": null,
+      "expectancy_ratio": null
+    }
+  },
+  "forecast_errors": {
+    "dnn": {
+      "open": {
+        "mse": 51.77782535663868,
+        "rmse": 7.195681021045797,
+        "mae": 5.626997898968885,
+        "mape_pct": 8.33653318699378,
+        "explained_variance": 0.0714469021404519
+      },
+      "high": {
+        "mse": 61.68062246095302,
+        "rmse": 7.853701195038745,
+        "mae": 6.297057713444984,
+        "mape_pct": 9.086305186641749,
+        "explained_variance": -0.09860730239763948
+      },
+      "low": {
+        "mse": 58.59690242434183,
+        "rmse": 7.65486135892361,
+        "mae": 6.081168517076893,
+        "mape_pct": 9.231739330270917,
+        "explained_variance": 0.005202895500918681
+      },
+      "close": {
+        "mse": 41.967700452439836,
+        "rmse": 6.478248254925079,
+        "mae": 5.017252621250198,
+        "mape_pct": 7.464089316053661,
+        "explained_variance": 0.005069669223396689
+      }
+    },
+    "persistence": {
+      "open": {
+        "mse": 55.16600216339198,
+        "rmse": 7.427381918508835,
+        "mae": 5.7898655641041765,
+        "mape_pct": 8.58115479070702,
+        "explained_variance": 0.0
+      },
+      "high": {
+        "mse": 44.21849796794182,
+        "rmse": 6.649699088525873,
+        "mae": 5.06007475070789,
+        "mape_pct": 7.348235276566181,
+        "explained_variance": 0.0
+      },
+      "low": {
+        "mse": 74.0898012727149,
+        "rmse": 8.607543277423291,
+        "mae": 7.209787906223168,
+        "mape_pct": 10.865283015627975,
+        "explained_variance": 0.0
+      },
+      "close": {
+        "mse": 61.24123367794224,
+        "rmse": 7.825677841435989,
+        "mae": 6.38477904976879,
+        "mape_pct": 9.4397657167011,
+        "explained_variance": -4.440892098500626e-16
+      }
+    },
+    "drift": {
+      "open": {
+        "mse": 42.05360850719138,
+        "rmse": 6.484875365586556,
+        "mae": 4.988490943749923,
+        "mape_pct": 7.4059724245635365,
+        "explained_variance": 0.17972202187232167
+      },
+      "high": {
+        "mse": 33.02203398251236,
+        "rmse": 5.746480138529356,
+        "mae": 4.307430583570652,
+        "mape_pct": 6.264862208917106,
+        "explained_variance": 0.1759832655010405
+      },
+      "low": {
+        "mse": 58.43498108303969,
+        "rmse": 7.644277669148321,
+        "mae": 6.354175184319138,
+        "mape_pct": 9.586211175680123,
+        "explained_variance": 0.1831545902877666
+      },
+      "close": {
+        "mse": 47.44096815309002,
+        "rmse": 6.887740424340193,
+        "mae": 5.540274808865352,
+        "mape_pct": 8.206230931420713,
+        "explained_variance": 0.1792226762977942
+      }
+    }
+  }
+}
